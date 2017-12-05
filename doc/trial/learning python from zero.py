@@ -705,12 +705,12 @@
 # make_shirt('Big')
 # make_shirt('Middle','I love Java')
 
-#8-5
+8-5
 # def describe_city(city,countury='China'):
 #     print('%s is in %s' %(city,countury))
 #
 # describe_city('fuzhou','china')
-
+#
 # import math
 #
 # def quadratic(a, b, c):
@@ -721,13 +721,7 @@
 # x1,x2 = quadratic(2,3,1)
 # print(x1,x2)
 
-
-def
-
-
-
-
-
+#
 
 
 
