@@ -1,18 +1,18 @@
 from random import choice
 class RandomWalk():
-    def __init__(self,max_point=5000):
+    def __init__(self,max_point):
         self.max_point = max_point
         self.x_value = [0]
         self.y_value = [0]
 
     def walk(self):
         while len(self.x_value) < self.max_point:
-            x_direction = choice([1,-1])
-            x_distance = choice([1,2,3,4,5])
+            x_direction = choice([1,-1,2,-2,3,-3])
+            x_distance = choice([1,2,3,4,5,6,7,8,9])
             x_step = x_direction * x_distance
 
-            y_direction = choice([1, -1])
-            y_distance = choice([1, 2, 3, 4, 5])
+            y_direction = choice([1,-1,2,-2,3,-3])
+            y_distance = choice([1,2,3,4,5,6,7,8,9])
             y_step = y_direction * y_distance
 
             if x_step == 0 and y_step == 0:
