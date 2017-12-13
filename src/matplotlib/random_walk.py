@@ -7,13 +7,8 @@ class RandomWalk():
 
     def walk(self):
         while len(self.x_value) < self.max_point:
-            x_direction = choice([1,-1,2,-2,3,-3])
-            x_distance = choice([1,2,3,4,5,6,7,8,9])
-            x_step = x_direction * x_distance
-
-            y_direction = choice([1,-1,2,-2,3,-3])
-            y_distance = choice([1,2,3,4,5,6,7,8,9])
-            y_step = y_direction * y_distance
+            x_step=self.getstep()
+            y_step=self.getstep()
 
             if x_step == 0 and y_step == 0:
                 continue
@@ -23,4 +18,11 @@ class RandomWalk():
             y_next = self.y_value[-1] + y_step
             self.x_value.append(x_next)
             self.y_value.append(y_next)
+
+
+    def getstep(self):
+        direction = choice([1, -1, 2, -2, 3, -3])
+        distance = choice([1, 2, 3, 4, 5, 6, 7, 8, 9])
+        return direction * distance
+
 

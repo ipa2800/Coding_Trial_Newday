@@ -721,7 +721,20 @@
 # x1,x2 = quadratic(2,3,1)
 # print(x1,x2)
 
-#
+class computer():
+
+    def __init__(self,memory,harddisk,display):
+        self.memory = memory
+        self.harddisk = harddisk
+        self.display = display
+
+    def config(self):
+        print('your computer\'s configurion is'+ self.memory)
+
+computer1 = computer('11','12','13')
+
+
+
 
 
 
