@@ -21,8 +21,6 @@ for x in range(1,10000):
     result = die1.die_it()+die2.die_it()
     results.append(result)
 
-print(results)
-
 #统计摇色子结果，这个方法有点意思
 for value in range(2,max_range+1):
     frequence = results.count(value)
